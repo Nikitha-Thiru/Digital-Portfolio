@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #84a6e9, #3d6dd8);
+            color: #333;
+        }
+
+        header {
+            background-color: #2b3a42;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 1rem;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .header-content {
+            text-align: center;
+            margin-left: 150px;
+            color: white;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            font-weight: 600;
+        }
+
+        .profile-picture {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 6px solid #84a6e9;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-picture:hover {
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        nav {
+            background-color: #1c1c1c;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            border-radius: 25px;
+            background-color: #333;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #3d6dd8;
+            transform: scale(1.1);
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .section-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: center;
+        }
+
+        .section-content ul {
+            list-style: disc;
+            padding-left: 20px;
+            color: #333;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #3d6dd8;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+                top: 1rem;
+                left: 1rem;
+            }
+
+            .header-content {
+                margin-left: 0;
+            }
+
+            .section-content {
+                padding: 2rem 1rem;
+                width: 95%;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image.jpeg" alt="Your Profile Picture" class="profile-picture">
+        <div class="header-content">
+            <h1>NIKITHA T</h1>
+            <p>I am a Developer and Programmer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a <b>web development</b> expert who is passionate about creating dynamic and user-friendly websites. 
+                I'm driven by the desire to craft high-performance web applications that enhance user experience and provide
+                seamless digital solutions. With over 3 months of an internship experience in the field, I'm dedicated to staying up to date 
+                with the latest trends and innovations in the web development landscape. I'm also committed to helping others learn 
+                more about web technologies, best practices, and how to build secure and scalable websites.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>ANNA ADARSH COLLEGE FOR WOMEN - BSc. Computer Science with Data Science (2023 - 2026)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+    <div class="section-content">
+        <h2>Skills</h2>
+        
+        <!-- Technical Skills -->
+        <div class="skills-group">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>MS Office : MS Word, MS Excel, Power Point Presentation</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Canva</li>
+                <li>Front-End Development</li>
+            </ul>
+        </div>
+        
+        <!-- Soft Skills -->
+        <div class="skills-group">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Leadership</li>
+                <li>Teamwork</li>
+                <li>Negotiation</li>
+                <li>Creativity</li>
+                <li>Critical Thinking</li>
+                <li>Management</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Static E-Commerce Dashboard</a></li>
+                <li><a href="#">Website</a></li>
+                <li><a href="#">Internship Registration Form</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="resume.jpeg" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nikitha T. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
